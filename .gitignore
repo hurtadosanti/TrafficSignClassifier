@@ -1,3 +1,4 @@
 *.zip
 *.p
 **/.vscode/**
+**/.idea/**
