@@ -39,10 +39,13 @@ The data distribution is as follows:
 - Add images with random noise
 - Add rotation of 15 degrees right and left
 ### Model Architecture
+Lenet Network with 2 convolution layers and 2 fully connected layers reduced to 43 outputs
 
-Input of 32x32x1
+| Layer | Input Size| Ouput Size|
+|-------|-----------|-----------|
+|Input| 32x32x1| |
 
-Lenet Network with 2 convolution layers with a width of 800 ouputs and 2 fully connected layers reduced to 43 output.
+.
 
  fc1 800, 120
  fc2 120, 43
