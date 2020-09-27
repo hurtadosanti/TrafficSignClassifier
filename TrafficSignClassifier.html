@@ -14334,7 +14334,7 @@ cp: -r not specified; omitting directory &#39;sample_data&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14394,7 +14394,7 @@ cp: -r not specified; omitting directory &#39;sample_data&#39;
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;/tmp/&#39;</span>
@@ -14428,18 +14428,18 @@ cp: -r not specified; omitting directory &#39;sample_data&#39;
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>--2020-09-26 07:55:34--  https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip
-Resolving s3-us-west-1.amazonaws.com (s3-us-west-1.amazonaws.com)... 52.219.116.9
-Connecting to s3-us-west-1.amazonaws.com (s3-us-west-1.amazonaws.com)|52.219.116.9|:443... connected.
+<pre>--2020-09-27 07:55:12--  https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip
+Resolving s3-us-west-1.amazonaws.com (s3-us-west-1.amazonaws.com)... 52.219.112.248
+Connecting to s3-us-west-1.amazonaws.com (s3-us-west-1.amazonaws.com)|52.219.112.248|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 123524425 (118M) [application/zip]
 Saving to: ‘/tmp/traffic-signs-data.zip’
 
-/tmp/traffic-signs- 100%[===================&gt;] 117,80M  8,43MB/s    in 29s     
+/tmp/traffic-signs- 100%[===================&gt;] 117,80M  8,20MB/s    in 26s     
 
-2020-09-26 07:56:05 (4,00 MB/s) - ‘/tmp/traffic-signs-data.zip’ saved [123524425/123524425]
+2020-09-27 07:55:39 (4,58 MB/s) - ‘/tmp/traffic-signs-data.zip’ saved [123524425/123524425]
 
---2020-09-26 07:56:05--  https://raw.githubusercontent.com/udacity/CarND-Traffic-Sign-Classifier-Project/master/signnames.csv
+--2020-09-27 07:55:39--  https://raw.githubusercontent.com/udacity/CarND-Traffic-Sign-Classifier-Project/master/signnames.csv
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.112.133
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.112.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -14448,7 +14448,7 @@ Saving to: ‘signnames.csv’
 
 signnames.csv       100%[===================&gt;]     999  --.-KB/s    in 0s      
 
-2020-09-26 07:56:05 (24,8 MB/s) - ‘signnames.csv’ saved [999/999]
+2020-09-27 07:55:40 (22,0 MB/s) - ‘signnames.csv’ saved [999/999]
 
 Finish extracting
 </pre>
@@ -14462,7 +14462,7 @@ Finish extracting
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s2">&quot;train.p&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
@@ -14516,7 +14516,7 @@ Finish extracting
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data Size</span>
@@ -14525,9 +14525,8 @@ Finish extracting
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Test set samples:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>
 <span class="c1"># Sign names labels</span>
 <span class="n">sign_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;signnames.csv&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Metrics</span><span class="se">\n</span><span class="s1">-------------&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sign_names</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Samples</span><span class="se">\n</span><span class="s1">-------------&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Signs labels:</span><span class="se">\t\t</span><span class="s1">&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sign_names</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Sign samples</span><span class="se">\n</span><span class="s1">-------------&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sign_names</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
@@ -14551,20 +14550,9 @@ Finish extracting
 <pre>Training set samples:	 34799
 Validation set samples:	 4410
 Test set samples:	 12630
+Signs labels:		 43
 
-Metrics
--------------
-         ClassId
-count  43.000000
-mean   21.000000
-std    12.556539
-min     0.000000
-25%    10.500000
-50%    21.000000
-75%    31.500000
-max    42.000000
-
-Samples
+Sign samples
 -------------
    ClassId              SignName
 0        0  Speed limit (20km/h)
@@ -14588,12 +14576,12 @@ Samples
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Random signs from the Y data</span>
 <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sample</span><span class="se">\t</span><span class="s1">Sign id</span><span class="se">\t</span><span class="s1">Name</span><span class="se">\n</span><span class="s1">-----------&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sample</span><span class="se">\t</span><span class="s1">Sign id</span><span class="se">\t</span><span class="s1">Name</span><span class="se">\n</span><span class="s1">-----------------------------------------------&#39;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">results</span><span class="p">[:</span><span class="mi">10</span><span class="p">]:</span>
     <span class="n">sign_index</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">sign_index</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">sign_names</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">sign_index</span><span class="p">,</span><span class="s2">&quot;SignName&quot;</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -14617,17 +14605,17 @@ Samples
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Sample	Sign id	Name
------------
-204	41	End of no passing
-6056	3	Speed limit (60km/h)
-872	31	Wild animals crossing
-8579	4	Speed limit (70km/h)
-3452	1	Speed limit (30km/h)
-3725	1	Speed limit (30km/h)
-2300	1	Speed limit (30km/h)
-4538	22	Bumpy road
-5804	3	Speed limit (60km/h)
-3130	1	Speed limit (30km/h)
+-----------------------------------------------
+10662	29	Bicycles crossing
+4945	37	Go straight or left
+9644	11	Right-of-way at the next intersection
+5675	3	Speed limit (60km/h)
+8215	4	Speed limit (70km/h)
+9735	11	Right-of-way at the next intersection
+5511	3	Speed limit (60km/h)
+8112	4	Speed limit (70km/h)
+23	41	End of no passing
+3446	1	Speed limit (30km/h)
 </pre>
 </div>
 </div>
@@ -15434,7 +15422,7 @@ z
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_gray</span><span class="p">(</span><span class="n">images</span><span class="p">):</span>
@@ -15472,7 +15460,7 @@ z
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_normalized</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">/</span><span class="mf">255.0</span>
@@ -15491,21 +15479,22 @@ z
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Augment-data">Augment data<a class="anchor-link" href="#Augment-data">&#182;</a></h3>
+<h3 id="Augment-train-data">Augment train data<a class="anchor-link" href="#Augment-train-data">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">augmented_images</span><span class="p">,</span><span class="n">augmented_labels</span> <span class="o">=</span> <span class="n">augment_data_set</span><span class="p">(</span><span class="n">X_train_gray</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;augmented data&#39;</span><span class="p">,</span><span class="n">augmented_images</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">augmented_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Original data:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">augmented_images</span><span class="p">,</span><span class="n">augmented_labels</span> <span class="o">=</span> <span class="n">augment_data_set</span><span class="p">(</span><span class="n">X_train_gray</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Augmented data:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">augmented_images</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">augmented_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">augmented_images</span><span class="p">)</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">augmented_labels</span><span class="p">)</span>
 <span class="n">X_train_augmented</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">X_train_gray</span><span class="p">,</span><span class="n">augmented_images</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">y_train_augmented</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">y_train</span><span class="p">,</span><span class="n">augmented_labels</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;complete data&#39;</span><span class="p">,</span><span class="n">X_train_augmented</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">y_train_augmented</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Complete data:</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">X_train_augmented</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span><span class="n">y_train_augmented</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train_augmented</span><span class="p">)</span><span class="o">==</span><span class="nb">len</span><span class="p">(</span><span class="n">y_train_augmented</span><span class="p">)</span>
 </pre></div>
 
@@ -15526,8 +15515,9 @@ z
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>augmented data (104397, 32, 32, 1) (104397,)
-complete data (139196, 32, 32, 1) (139196,)
+<pre>Original data:	 (34799, 32, 32, 3) (34799,)
+Augmented data:	 (104397, 32, 32, 1) (104397,)
+Complete data:	 (139196, 32, 32, 1) (139196,)
 </pre>
 </div>
 </div>
