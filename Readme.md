@@ -1,9 +1,13 @@
 # Traffic Sign Recognition Program
+**Building a Traffic Sign Recognition Convolutional Neural Network**
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 ## Description
-The goals of this project are the following:
+Using TensorFlow 1.x we have implement a variation of LeNet-5 network from from Pierre Sermanet and Yann LeCun: [Traffic Sign Recognition with Multi-Scale Convolutional Networks](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf), Proceedings of International Joint Conference on Neural Networks (IJCNN'11), 2011.
+
+The goals of this project is learning about convolutional neural networks. We have done the following tasks:
+
 * Load the data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
