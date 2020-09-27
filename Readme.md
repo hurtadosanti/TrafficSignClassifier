@@ -14,8 +14,8 @@ The goals of this project are the following:
 ## Documentation
 - [Rubric Points](https://review.udacity.com/#!/rubrics/481/view)
 - [Solution Description](Report.md)
-- [Code Implementation](TrafficSignClassifier.ipynb)
-
+- [Code Implementation](TrafficSignClassifier.html)
+  - [Jupyter Notebook](TrafficSignClassifier.ipynb)
   -  <a href="https://colab.research.google.com/github/hurtadosanti/TrafficSignClassifier/blob/master/TrafficSignClassifier.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 - [Dataset](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip)

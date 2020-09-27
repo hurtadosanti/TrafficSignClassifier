@@ -1,8 +1,12 @@
 # **Traffic Sign Recognition** 
+
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 ---
-**Build a Traffic Sign Recognition Project**
+**Building a Traffic Sign Recognition Convolutional Neural Network**
+
 ![speed limit](images/traffic-sign-3008267_640.jpg)
+
 The goals of the project are the following:
 * Load the data set (see below for links to the project data set)
 * Explore, summarize and visualize the data set
